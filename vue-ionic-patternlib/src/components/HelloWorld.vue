@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { IonButton } from '@ionic/vue'
 defineProps<{
   msg: string
 }>()
@@ -12,6 +13,7 @@ defineProps<{
       <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
     </h3>
+    <ion-button>Press Me</ion-button>
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { IonButton } from '@ionic/vue'
+import { IonButton, IonCheckbox, IonItem, IonLabel } from '@ionic/vue'
 defineProps<{
   msg: string
 }>()
@@ -14,6 +14,10 @@ defineProps<{
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
     </h3>
     <ion-button>Press Me</ion-button>
+    <ion-item>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-label>I agree to the terms and conditions</ion-label>
+    </ion-item>
   </div>
 </template>
 

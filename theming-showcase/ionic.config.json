@@ -1,0 +1,7 @@
+{
+  "name": "theming-showcase",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}

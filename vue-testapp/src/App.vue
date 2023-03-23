@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import HelloWorld from '../../vue-ionic-patternlib/src/components/HelloWorld.vue';
+import {IonButton} from '../../vue-ionic-patternlib/src/index';
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import HelloWorld from '../../vue-ionic-patternlib/src/components/HelloWorld.vue
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+  <ion-button>This comes from the host app</ion-button>
 </template>
 
 <style scoped>

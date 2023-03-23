@@ -22,6 +22,11 @@
           <ion-checkbox slot="start"></ion-checkbox>
           <ion-label>I'm not special</ion-label>
         </ion-item>
+        
+        <ion-item class="custom-md">
+          <ion-checkbox slot="start"></ion-checkbox>
+          <ion-label>I'm different in Material Design</ion-label>
+        </ion-item>
 
         <ion-item-sliding>
           <ion-item-options side="start">
@@ -70,6 +75,10 @@
     d: path("M18.75 12H5.25M12 5.25V18.75V5.25Z");
   }
 }
+
+.md .custom-md::part(native) {
+  background: lavender;
+}
 </style>
 
 <script setup lang="ts">
@@ -83,6 +92,7 @@ import {
   IonItemOptions,
   IonItemOption,
   IonLabel,
+  IonList,
   IonPage,
   IonText,
   IonTitle,

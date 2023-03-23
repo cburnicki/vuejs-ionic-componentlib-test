@@ -1,11 +1,30 @@
 /* Ionic Variables and Theming. For more info, please see:
 http://ionicframework.com/docs/theming/ */
 
+/*https://assets.obi.de/css-utilities/public/fonts/obisans_bold-webfont.c62ae8.woff2*/
+/*https://assets.obi.de/css-utilities/public/fonts/obisans_regular-webfont.9c4b32.woff2*/
+
+@font-face {
+  font-family: "Obi";
+  src: url('https://assets.obi.de/css-utilities/public/fonts/obisans_bold-webfont.c62ae8.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Obi";
+  src: url('https://assets.obi.de/css-utilities/public/fonts/obisans_regular-webfont.9c4b32.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /** Ionic CSS Variables **/
 :root {
+  --ion-font-family: Obi, sans-serif;
+
   /** primary **/
   /** --ion-color-primary: #3880ff; **/
-  --ion-color-primary: red;
+  --ion-color-primary: #ff7e21;
   --ion-color-primary-rgb: 255, 0, 0;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;

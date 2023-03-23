@@ -12,17 +12,51 @@
         </ion-toolbar>
       </ion-header>
 
-      <ExploreContainer name="Tab 1 page" />
+      <ion-list>
+        <ion-item>
+          <ion-checkbox class="custom" slot="start"></ion-checkbox>
+          <ion-label>I'm special</ion-label>
+        </ion-item>
 
-      <ion-item>
-        <ion-checkbox class="custom" slot="start"></ion-checkbox>
-        <ion-label>I'm special</ion-label>
-      </ion-item>
+        <ion-item>
+          <ion-checkbox slot="start"></ion-checkbox>
+          <ion-label>I'm not special</ion-label>
+        </ion-item>
+        
+        <ion-item class="custom-md">
+          <ion-checkbox slot="start"></ion-checkbox>
+          <ion-label>I'm different in Material Design</ion-label>
+        </ion-item>
 
-      <ion-item>
-        <ion-checkbox slot="start"></ion-checkbox>
-        <ion-label>I'm not special</ion-label>
-      </ion-item>
+        <ion-item-sliding>
+          <ion-item-options side="start">
+            <ion-item-option color="success">Archive</ion-item-option>
+          </ion-item-options>
+
+          <ion-item>
+            <ion-label>
+              <ion-text color="primary">
+                <h2>Sliding Ipsum</h2>
+              </ion-text>
+              <p>Sliding Item with Options on Both Sides</p>
+            </ion-label>
+          </ion-item>
+
+          <ion-item-options side="end">
+            <ion-item-option>Favorite</ion-item-option>
+            <ion-item-option color="danger">Delete</ion-item-option>
+          </ion-item-options>
+        </ion-item-sliding>
+
+        <ion-item>
+          <ion-label>Just some fillers to show header behaviour</ion-label>
+        </ion-item>
+
+        <ion-item v-for="(item, k) in items" :key="k">
+          <ion-label>Just filler item No {{k}}</ion-label>
+        </ion-item>
+
+      </ion-list>
     </ion-content>
   </ion-page>
 </template>
@@ -41,6 +75,10 @@
     d: path("M18.75 12H5.25M12 5.25V18.75V5.25Z");
   }
 }
+
+.md .custom-md::part(native) {
+  background: lavender;
+}
 </style>
 
 <script setup lang="ts">
@@ -50,9 +88,17 @@ import {
   IonContent,
   IonHeader,
   IonItem,
+  IonItemSliding,
+  IonItemOptions,
+  IonItemOption,
   IonLabel,
+  IonList,
   IonPage,
+  IonText,
   IonTitle,
   IonToolbar,
 } from "@ionic/vue";
+
+const items = new Array(20)
+
 </script>

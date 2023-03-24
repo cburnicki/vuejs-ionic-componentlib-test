@@ -61,7 +61,8 @@
   </ion-page>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
+
 .custom {
   --checkmark-color: var(--ion-color-success-contrast);
   --checkmark-width: 4px;
@@ -77,7 +78,7 @@
 }
 
 .md .custom-md::part(native) {
-  background: lavender;
+  background: blue;
 }
 </style>
 
